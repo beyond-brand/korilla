@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Staatliches', cursive;
+    font-size: 12px;
+    text-align: center;
+    background-color: #ECE8D8;
+    display: flex;
+    flex-direction: column;
+    overflow-x :hidden;
+}
+li {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+}
+p {
+    font-size: 12px;
+}
+a {
+    text-decoration: none;
+}
+.font-bold {
+    font-weight: 800;
+}
+.font-light {
+    font-weight: 200;
+}
+.font-right {
+    text-align: right;
+}
+.font-left {
+    text-align: left;
+}
+.bg-dark {
+    background-color: #2B2B2B;
+}
+.bg-beige {
+    background-color: #ECE8D8;
+}
+.bg-blue {
+    background-color: #75A9D0;
+}
+.font-yellow {
+    color: #F6C026;
+}
+.font-blue {
+    color: #75A9D0;
+}
+.font-dark {
+    color: #2b2b2b;
+}
+.font-light {
+    color: #ECE8D8;
+}
+section {
+    overflow: hidden;
+    width: 100vw;
+    height: auto;
+}
+.btn {
+    max-width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2b;
+    color: #fffff5;
+}
+.btn-logo {
+    height: 100%;
+    width: 30%;
+}
+.btn-logo img {
+    height: 100%;
+}
+/*=========================================
+    Nav bar
+=========================================*/
+.navbar {
+    background-color: #ECE8D8;
+}
+.navbar .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.navbar .navbar-nav li a {
+    font-size: 1.3rem;
+    color: #000;
+}
+.navbar-brand {
+    display: block;
+    width: 226px;
+    height: 70px;
+}
+.navbar-brand img {
+    height: 100%;
+    scale: 1.5;
+}
+/*=========================================
+    hero
+=========================================*/
+#hero img {
+    width: 100%;
+}
+/*=========================================
+    event
+=========================================*/
+#event {
+    padding: 50px 0;
+}
+#event .btn-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+#event .card-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    overflow: hidden;
+}
+#event .event-card {
+    width: 500px;
+    height: 220px;
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card1{
+    background: url(../images/Neon-sign.jpg) top center no-repeat rgba(59, 59, 59, 1);
+    background-size: cover;
+    background-blend-mode:overlay;
+}
+.card1 h3 {
+    font-size: 50px;
+    color: #fff;
+    text-shadow:
+    0 0 1px #fff, 0 0 2px #fff, 0 0 5px #F6C026, 0 0 10px #F6C026, 0 0 20px #F6C026, 0 0 55px #F6C026, 0 0 75px #F6C026;
+    margin-bottom: -10px;
+}
+.card1 h4 {
+    color: #ECE8D8;
+    font-size: 30px;
+}
+.card2 {
+    flex-direction: row !important;
+    outline: 3px dotted #2b2b2b;
+    outline-offset: -3px;
+    padding: 0;
+}
+.card2 img {
+    width: 80%;
+}
+.card2 div {
+    width: 20%;
+    font-weight: bold;
+    rotate: 90deg;
+}
+/*=========================================
+    Service
+=========================================*/
+#service {
+    margin-bottom: 50px;
+}
+#service .container-fluid {
+    display: flex;
+    padding: 0;
+    gap: 0;
+}
+#service .service-box {
+    height: 50vh;
+    flex: 1;
+}
+.service-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.service-box h2 {
+    font-size: 50px;
+    color: #fff;
+    text-shadow:
+    0 0 1px #ffffffb2, 0 0 1px #ffffffb2, 0 0 5px #f6bf26, 0 0 10px #f6bf26, 0 0 20px #f6bf26, 0 0 55px #f6bf26, 0 0 75px #f6bf26;
+    position: absolute;
+}
+.service-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+/*=========================================
+    Footer
+=========================================*/
+footer {
+    height: 30vh;
+    background-color: #75A9D0;
+}
+footer .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+footer ul li {
+    width: 55px;
+    height: 55px;
+    border: 2px dotted #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h4 {
+    color: #fffff5;
+}
+footer i {
+    color: #fffff5;
+    font-size: 25px;
+}
