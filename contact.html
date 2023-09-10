@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korilla Korean BBQ</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="location.html">LOCATION</a>
+              </li>
+              <li class="nav-item">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="images/logo_big.png">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="event.html">EVENT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section id="contact" class="page-section">
+      <div class="container">
+        <div class="row">
+          <div class="contact-info">
+            <h2>17TH AVE</h2>
+            <h6>1410 17 Ave SW, Calgary, AB T2T 5S8, Canada</h6>
+          </div>
+          <div class="contact-info">
+            <h2>Contact info</h2>
+            <h6>+1 (587) 435-0908</h6>
+          </div>
+        </div>
+        <div class="row">
+          <form>
+            <h2>Message us</h2>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Your name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="msg" rows="7" placeholder="Write your message" required></textarea>
+            </div>
+            <button type="submit" class="btn submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <h4>®KORILLA 2023 ALL RIGHTS RESERVED.</h4>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Button -->
+    <div class="btn-float-box" >
+      <a class="btn-float" aria-current="page" data-bs-toggle="modal" data-bs-target="#staticBackdrop">QUICK MENU</a>
+        <a class="btn-float" aria-current="page" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">QUICK BOOKING</a>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content" style="background-color: transparent !important; border: none;">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <img src="images/menu/menu.jpeg">
+            <div class="modal-body">
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content" style="background-color: transparent !important; border: none;">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <img src="images/coming2.jpg.jpg">
+            <div class="modal-body">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal JS -->
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+    </script>
+
+</body>
+</html>

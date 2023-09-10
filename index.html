@@ -12,6 +12,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <nav class="navbar sticky-top navbar-expand-lg">
@@ -22,75 +23,110 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">MENU</a>
+                <a class="nav-link" href="menu.html">MENU</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">RESERVATION</a>
+                <a class="nav-link" href="location.html">LOCATION</a>
               </li>
               <li class="nav-item">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img class="logo" src="images/logo_big.png">
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">EVENT</a>
+                <a class="nav-link" href="event.html">EVENT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link" href="contact.html">CONTACT</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
-    
+
     <section id="hero" class="page-section">
         <img src="images/bg.png">
     </section>
-    <section id="event" class="page-section">
+    <section id="home-event" class="page-section">
         <div class="container">
             <div class="row btn-row">
                 <div class="btn">
-                    <div class="btn-logo"><img src="images/logo_white_icon.png"></div>
-                    
-                    reservation
+                    <a href="menu.html">
+                        <div class="btn-logo"><img src="images/logo_white_icon.png"></div>
+                        menu
+                    </a>
                 </div>
                 <div class="btn">
-                    <div class="btn-logo"><img src="images/logo_white_icon.png"></div>
-                    menu
+                    <a href="location.html">
+                        <div class="btn-logo"><img src="images/logo_white_icon.png"></div>
+                        location
+                    </a>
                 </div>
-                <div class="btn">
-                    <div class="btn-logo"><img src="images/logo_white_icon.png"></div>
-                    location
+                <div class="btn" >
+                    <a href="reservation.html">
+                        <div class="btn-logo"><img src="images/logo_white_icon.png"></div>
+                        reservation
+                    </a>
                 </div>
             </div>
             <div class="row card-row">
-                <div class="event-card card1">
-                    <h3>10% OFF</h3>
-                    <h4>grand opening</h4>
+                <div class="row card-row1">
+                    <div class="line">
+                        <div class="event-card card1">
+                            <div class="card-img">
+                                <img src="images/coming1.jpg.jpg">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="event-card card2">
-                    <img src="images/bg.png">
-                    <div><h3>coupon</h3></div>
+
+                <div class="row card-row2">
+                    <div class="line">
+                        <div class="event-card card2">
+                            <div class="card-img">
+                                <img src="images/Neon-sign.jpg">
+                            </div>
+                            <div class="card-content">
+                                <h3>10% OFF</h3>
+                                <h4>grand opening</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div class="event-card card3">
+                        <div class="card-img">
+                            <img src="images/coming3.jpg.jpg">
+                        </div>
+                        <div class="card-content"><h3>coupon</h3></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="service" class="page-section">
         <div class="container-fluid">
-            <div class="service-box bbq">
-                <img src="images/bbq.jpg">
-                <h2>BBQ</h2>
-            </div>
-            <div class="service-box kara">
-                <img src="images/karaoke.jpg">
-                <h2>KARAOKE</h2>
-            </div>
-            <div class="service-box roof">
-                <img src="images/roof.jpg">
-                <h2>ROOF</h2>
-            </div>
+            <a href="bbq.html">
+                <div class="service-box bbq">
+                    <img src="images/bbq.jpg">
+                    <h2>BBQ</h2>
+                </div>
+            </a>
+            <a href="karaoke.html">
+                <div class="service-box kara">
+                    <img src="images/karaoke.jpg">
+                    <h2>KARAOKE</h2>
+                </div>
+            </a>
+            <a href="roof.html">
+                <div class="service-box roof">
+                    <img src="images/roof.jpg">
+                    <h2>ROOF</h2>
+                </div>
+            </a>
         </div>
     </section>
+
     <footer>
         <div class="container">
             <div class="row">
@@ -111,5 +147,41 @@
             </div>
         </div>
     </footer>
+    <!-- Quick Menu -->
+    <div class="btn-float-box" >
+        <a class="btn-float" aria-current="page" data-bs-toggle="modal" data-bs-target="#staticBackdrop">QUICK MENU</a>
+        <a class="btn-float" aria-current="page" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">QUICK BOOKING</a>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content" style="background-color: transparent !important; border: none;">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <img src="images/menu/menu.jpeg">
+            <div class="modal-body">
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content" style="background-color: transparent !important; border: none;">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <img src="images/coming2.jpg.jpg">
+            <div class="modal-body">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal JS -->
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
+    </script>
+
 </body>
 </html>
