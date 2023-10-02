@@ -10,12 +10,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 
+    <!-- swiper -->
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css"> 
+
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg">
+    <nav class="navbar sticky-top navbar-expand-lg home-nav">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,7 +34,6 @@
               </li>
               <li class="nav-item">
                 <a class="navbar-brand" href="index.html">
-                    <img class="logo" src="images/logo_big.png">
                 </a>
               </li>
               <li class="nav-item">
@@ -45,8 +48,48 @@
     </nav>
 
     <section id="hero" class="page-section">
-        <img src="images/bg.png">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="images/slide/1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide/2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide/3.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide/4.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide/5.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide/6.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide/7.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/slide/8.jpg">
+                    </div>
+            </div>
+            <!-- If we need pagination -->
+            <!--<div class="swiper-pagination"></div>-->
+  
+            <!-- If we need navigation buttons -->
+            <!--<div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>-->
+  
+            <!-- If we need scrollbar -->
+            <!--<div class="swiper-scrollbar"></div>-->
+        </div>
     </section>
+    
     <section id="home-event" class="page-section">
         <div class="container">
             <div class="row btn-row">
@@ -82,23 +125,28 @@
 
                 <div class="row card-row2">
                     <div class="line">
-                        <div class="event-card card2">
-                            <div class="card-img">
-                                <img src="images/Neon-sign.jpg">
+                        <a href="event.html">
+                            <div class="event-card card2">
+                                <div class="card-img">
+                                    <img src="images/opensoon.jpg">
+                                </div>
+                                <div class="card-content">
+                                    <h3>october</h3>
+                                    <h4>grand opening</h4>
+                                </div>
                             </div>
-                            <div class="card-content">
-                                <h3>10% OFF</h3>
-                                <h4>grand opening</h4>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="line">
-                        <div class="event-card card3">
-                        <div class="card-img">
-                            <img src="images/coming3.jpg.jpg">
-                        </div>
-                        <div class="card-content"><h3>coupon</h3></div>
-                        </div>
+                            <div class="event-card card3">
+                                <a href="https://www.instagram.com/korilla.kbbq/">
+                                    <div class="card-img">
+                                        <img src="images/followus.png">
+                                </a>
+                            </div>
+                            <div class="card-content"><h3>NEWS</h3></div>
+                            </div>
+                        
                     </div>
                 </div>
             </div>
@@ -114,7 +162,7 @@
             </a>
             <a href="karaoke.html">
                 <div class="service-box kara">
-                    <img src="images/karaoke.jpg">
+                    <img src="images/karaoke2.jpg">
                     <h2>KARAOKE</h2>
                 </div>
             </a>
@@ -127,26 +175,28 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <ul>
-                    <li>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="bi bi-youtube"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="row">
-                <h4>®KORILLA 2023 ALL RIGHTS RESERVED.</h4>
-            </div>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/korilla.kbbq/"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </li>
+            </ul>
         </div>
-    </footer>
+        <div class="row">
+            <h4>®KORILLA 2023 ALL RIGHTS RESERVED.</h4>
+        </div>
+    </div>
+</footer>
+
     <!-- Quick Menu -->
     <div class="btn-float-box" >
         <a class="btn-float" aria-current="page" data-bs-toggle="modal" data-bs-target="#staticBackdrop">QUICK MENU</a>
@@ -182,6 +232,17 @@
     <script>
         var myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
     </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+            direction: 'vertical',
+            loop: true,
+            autoplay: true,
+            speed: 300,
+        });
+    </script>
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>
