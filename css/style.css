@@ -84,6 +84,15 @@ section {
 .btn:hover a {
     color: #F6C026;
 }
+.btn:hover .btn-logo img {
+    visibility: hidden;
+}
+.btn:hover .btn-logo {
+    background-image: url(../images/logo_yellow_icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .btn a {
     width: 100%;
     height: 100%;
@@ -130,7 +139,8 @@ a.active {
     Nav bar
 =========================================*/
 .navbar {
-    background-color: #ECE8D8;
+    background-color: transparent;
+    transition: all 0.3s;
 }
 .navbar .navbar-nav {
     width: 100%;
@@ -148,10 +158,32 @@ a.active {
     width: 226px;
     height: 70px;
     margin: 0 !important;
+    background-image: url(../images/logo_big.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .navbar-brand img {
     height: 100%;
     scale: 1.5;
+}
+.navbar-scrolled {
+    background-color: #ECE8D8;
+}
+.navbar-scrolled.home-nav .navbar-brand {
+    background-image: url(../images/logo_big.png) !important;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar-scrolled.home-nav .navbar-nav li a {
+    color: #000 !important;
+}
+.home-nav .navbar-nav li a {
+    color: #ECE8D8 !important;
+}
+.home-nav .navbar-brand {
+    background-image: url(../images/logo_big_white.png) !important;
 }
 /*=========================================
     floating button
@@ -196,18 +228,25 @@ a.active {
     hero
 =========================================*/
 #hero {
-    height: 90vh;
+    height: 100vh;
+    margin-top: -86px;
 }
-#hero img {
+#hero .swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper .swiper-slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
 }
 /*=========================================
     home-event
 =========================================*/
 #home-event {
     padding: 50px 0;
+    background-color: #ECE8D8;
 }
 #home-event .btn-row {
     display: flex;
@@ -316,7 +355,7 @@ a.active {
     Service
 =========================================*/
 #service {
-    margin-bottom: 50px;
+    background-color: #ECE8D8;
 }
 #service .container-fluid {
     display: flex;
@@ -352,13 +391,15 @@ a.active {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.6;
+    opacity: 0.2;
 }
 .service-box:hover img {
     opacity: 1;
 }
 .service-box:hover h2 {
     transform:translateY(-10px);
+    text-shadow: none;
+
 }
 /*=========================================
     Menu
